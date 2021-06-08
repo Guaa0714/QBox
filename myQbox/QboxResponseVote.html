@@ -7,11 +7,14 @@
     
     <body>
         <nav class="topnav">
+            <div class = "list">
+                <a href="#" class="list"><img src="image/List_button.png" width="50"></a> 
+            </div>
             <div class = "logo">
                 <a href="QboxHome.html"><img src="image/Home_button.png"></a>
             </div>
             <div class = "login_out">
-                <a href="LogIn.html"><img src="image/Login_button.png"></a>
+                <a href="QboxHome.html"><img src="image/Login_button.png"></a>
             </div>
         </nav>
         <div id="sitebody">
@@ -19,14 +22,18 @@
                 <input class="search" type="text" name="q" placeholder=" Search" style="border-color: #003B71;">
             </form>
             <div class="content">
-                <ul>
-                    <li class="vote1"><a href="QboxResponseVote.html"><img src="image/Vote 1.png"></a></li>
-                    <li class="short1"><a href="QboxResponseShort.html"><img src="image/Short-answer Question 1.png"></a></li>
-                    <li class="vote2"><img src="image/Vote 2.png"></li>
-                    <li class="short2"><img src="image/Short-answer Question 2.png"></li>
-                    <li class="vote3"><img src="image/Vote 3.png"></li>
-                </ul>
-
+                <div class="R_vote">
+                    <img src="image/VoteQuestion.png" width="1000">
+                </div>
+                <form class="vote" method="POST">
+                    <div class="optbox">
+                        <input class="option" type="button" id=op1 value="煉乳" autoaomplete="off" onclick="javascript:window.alert('Success! You choose 煉乳'); location.href='QboxHome.html';" style="color: #43618F; border: 0px; background: #FFF5E1;margin-top: 7% ;zoom: 400%">
+                    </div>
+                    <div class="oppobox">
+                        <input class="opponent" type="button" id=op2 value="煉奶" onclick="javascript:window.alert('Success! You choose 煉奶'); location.href='QboxHome.html';" style="color: #43618F; border: 0px; background: #FFF5E1;margin-top: 8%; zoom: 400%;">
+                    </div>
+                </form>
+                
                 <input type="checkbox" name="" id="sideMenu-active">
                 <div class="sideMenu">
                     <div class = "list">

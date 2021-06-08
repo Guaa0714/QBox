@@ -52,12 +52,7 @@ h1 {
  
 }
 
-.topnav .list{
-  position: absolute;
-  left: 5px;
-  margin-top: 0.4rem;
-  display: inline-block;
-}
+
 .topnav .logo{
   margin-top: 0.6rem;
   display: inline-block;
@@ -88,10 +83,12 @@ h1 {
   margin-left:50px;
   margin-right:50px;
   margin-top: 70px;
+  width: 91vw;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   height:1000px;
   background-color:#FFEBC4;
+  display: inline-block;
 }
 
 .vote1{
@@ -129,6 +126,7 @@ h1 {
   background: #FFF4DF;
   border: 2px solid#43618F;
   border-radius: 10px;
+  display: inline-block;
 }
 .fname{
   position: absolute;
@@ -140,6 +138,7 @@ h1 {
   background: #FFF4DF;
   border: 2px solid#43618F;
   border-radius: 10px;
+  display: inline-block;
 }
 .nickname{
   position: absolute;
@@ -151,6 +150,7 @@ h1 {
   background: #FFF4DF;
   border: 2px solid#43618F;
   border-radius: 10px;
+  display: inline-block;
 }
 .sex{
   position: absolute;
@@ -162,6 +162,7 @@ h1 {
   background: #FFF4DF;
   border: 2px solid#43618F;
   border-radius: 10px;
+  display: inline-block;
 }
 
 .mail{
@@ -174,6 +175,7 @@ h1 {
   background: #FFF4DF;
   border: 2px solid#43618F;
   border-radius: 10px;
+  display: inline-block;
 }
 .pw{
   position: absolute;
@@ -185,6 +187,7 @@ h1 {
   background: #FFF4DF;
   border: 2px solid#43618F;
   border-radius: 10px;
+  display: inline-block;
 }
 
 ::placeholder{
@@ -196,17 +199,24 @@ h1 {
   position: absolute;
   left: 110px;
   top: 40px;  
+  display: inline-block;
 }
 
 .Qboxdata{
   position: absolute;
   left: 100px;
   top:300px;
+  display: inline-block;
 }
 
 .logbg{
   position: absolute;
-  left: 12%;
+  left: 35%;
+  top: 5%;
+  width: 30%;
+  height: 40%;
+  border: 2px solid #5C5C5C;
+  border-radius: 5px;
 }
 
 .R_short_answer{
@@ -220,3 +230,169 @@ h1 {
   left: 7%;
   top: 5%;
 }
+
+.have{
+  position: absolute;
+  left: 10%;
+  top: 50%;
+}
+
+.login_name{
+  position: absolute;
+  left: 26.5%;
+  top: 48%;
+  background: #FFEBC4;
+  border-radius: 5px;
+  height: 20px;
+  border: 2px solid #5C5C5C;
+}
+
+.login_pw{
+  position: absolute;
+  left: 26.5%;
+  top: 65%;
+  background: #FFEBC4;
+  border-radius: 5px;
+  height: 20px;
+  border: 2px solid #5C5C5C;
+}
+
+.response_box{
+  position: absolute;
+  right: 7.1rem;
+  top: 450px;
+  height: 20%;
+  width: 1000px;
+  font-size: 30px;
+  background: #FFF4DF;
+  border: 4px solid#43618F;
+  border-radius: 20px;
+}
+
+
+.optbox{
+  position: absolute;
+  top: 35%;
+  left: 8%;
+  height: 150px;
+  width: 500px;
+  border: 3px solid #003B71;
+  border-radius: 10px;
+  background: #FFF5E1;
+  display: inline-block;
+}
+.oppobox{
+  position: absolute;
+  top: 35%;
+  left: 53%;
+  height: 150px;
+  width: 450px;
+  border: 3px solid #003B71;
+  border-radius: 10px;
+  background: #FFF5E1;
+  display: inline-block;
+}
+
+.list{
+  position: absolute;
+  right:-3px;
+  top: -55px;
+  display: inline-block;
+}
+
+label {
+  width: 52px;
+  height: 50px;
+  background-color: #8F7A51;
+  position: absolute; 
+  right: -60px;
+  top: 2.5%; 
+  /*bottom: 0; */
+  line-height: 80px;
+  /*text-align: center;*/
+  border-radius: 0 5px 5px 0;
+  /*box-shadow: 5px 0 5px rgba(23, 23, 54, 0.6);*/
+}
+
+#sideMenu-active:checked + .sideMenu {
+  transform: translateX(0);
+}
+
+#sideMenu-active {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;}
+
+  .sideMenu {
+    position: absolute;
+    left: -41.5%;
+    top: -70px;
+    width: 300px;
+    height: 125%;
+    background-color: #DBC392;
+    /*border-right: 3px solid #d1d1d1;*/
+    display: flex;
+    flex-direction: column; 
+    padding: 50px 0;
+    /*box-shadow: 5px 0 5px rgba(23, 23, 54, 0.6);*/
+    position:relative;
+    transform:translateX(-100%);
+    transition:0.5s;
+    display: inline-block;
+  }
+
+  ._settings{
+    font-size: 3rem;
+    color: #FFF4DF;
+    position: absolute;
+    left: 1vw;
+    top: 10px;
+  }
+
+  ._mypage{
+    font-size: 3rem;
+    color: #FFF4DF;
+    position: absolute;
+    left: 1vw;
+    top: 80px;
+  }
+
+  ._vote{
+    font-size: 3rem;
+    color: #FFF4DF;
+    position: absolute;
+    left: 1vw;
+    top: 150.5px;
+  }
+
+  ._talk{
+    font-size: 3rem;
+    color: #FFF4DF;
+    position: absolute;
+    left: 1vw;
+    top: 225.5px;
+  }
+
+  ._history{
+    font-size: 3rem;
+    color: #FFF4DF;
+    position: absolute;
+    left: 1vw;
+    top: 295.5px;
+  }
+
+  ._notifiction{
+    font-size: 3rem;
+    color: #FFF4DF;
+    position: absolute;
+    left: 1vw;
+    top: 365.5px;
+  }
+
+  ._help{
+    font-size: 3rem;
+    color: #FFF4DF;
+    position: absolute;
+    left: 1vw;
+    top: 435.5px;
+  }

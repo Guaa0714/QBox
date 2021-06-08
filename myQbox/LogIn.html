@@ -7,16 +7,45 @@
     
     <body>
         <nav class="topnav">
-            <div class = "list">
-                <a href="#" class="list"><img src="/image/List_button.png" width="50"></a> 
-            </div>
             <div class = "logo">
-                <a href="/QboxHome.html"><img src="/image/Home_button.png" width="100%"></a>
+                <a href="QboxHome.html"><img src="image/Home_button.png" width="100%"></a>
             </div>
         </nav>
         <div id="sitebody">
             <div class="content">
-                <div class="logbg"><img src="/image/LogIn.png" width="65%"></div>
+                <div class="logbg">
+                    <img src="image/Logbox.png" style="width: 35%; margin-top: 8%;">
+                    <p style="font-size: 1.5rem; color: #5c5c5c;width: 20%;margin-left: 17%;margin-top: 6%;">Name:</p>
+                    <form method="POST">
+                        <input class=login_name type="text">
+                    </form>
+                    <p style="font-size: 1.5rem; color: #5c5c5c;width: 20%; margin-left: 19.5%;margin-top: 11%">Password:</p>
+                    <form method="POST">
+                        <input class="login_pw" type="password">
+                    </form>
+                    <form method="POST">
+                        
+                        <input class="prompttest" type="button" value="Forget password" onclick="window.prompt('Please enter your e-mail!'); window.alert('Check your e-mail to reset password!')" style="margin-left: 3%;margin-top: 15%; background: #FFEBC4; border: 0px; color: #8B8A8A;">
+                        <input type="button" value="| Sign up" onclick="javascript:location.href='CreateAccount.html';" style="margin-top: 10%; size: 3%; background: #FFEBC4; border: 0px; color: #8B8A8A;">
+                    </form>
+
+                    <form method="POST">
+                        <input type="button" value="send" onclick="javascript:location.href='Home.html';"style="border: 2px solid #003b71;color: #585858; border-radius: 5px; width: 50px; height: 30px; margin-top: 20px; margin-left: 0px;">
+                    </form>
+                </div>
+                <input type="checkbox" name="" id="sideMenu-active">
+                <div class="sideMenu">
+                    <div class = "list">
+                        <label for="sideMenu-active">
+                            <img src="image/List_button.png" style="width: 50px">
+                        </label>
+                    </div>
+                    <nav>
+                        <div><a href="#" class="_settings"><img src="image/menu_setting.png" style="width: 18%"> Settings</a></div>
+                        <div style="background: #FFF4DF; height: 2px; width: 25rem; margin-left: 1vw; margin-top: 25px;"></div>
+                        <div><a href="#" class="_mypage"><img src="image/menu_help.png" style="width: 16%"> Help</a></div>
+                    </nav>
+                </div>
             </div>
             
         </div>

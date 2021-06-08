@@ -7,28 +7,32 @@
     
     <body>
         <nav class="topnav">
+            <div class = "list">
+                <a href="#" class="list"><img src="image/List_button.png" width="50"></a> 
+            </div>
             <div class = "logo">
                 <a href="QboxHome.html"><img src="image/Home_button.png"></a>
             </div>
             <div class = "login_out">
-                <a href="LogIn.html"><img src="image/Login_button.png"></a>
+                <a href="QboxHome.html"><img src="image/Login_button.png"></a>
             </div>
         </nav>
+        
         <div id="sitebody">
             <form method="POST">
                 <input class="search" type="text" name="q" placeholder=" Search" style="border-color: #003B71;">
             </form>
             <div class="content">
-                <ul>
-                    <li class="vote1"><a href="QboxResponseVote.html"><img src="image/Vote 1.png"></a></li>
-                    <li class="short1"><a href="QboxResponseShort.html"><img src="image/Short-answer Question 1.png"></a></li>
-                    <li class="vote2"><img src="image/Vote 2.png"></li>
-                    <li class="short2"><img src="image/Short-answer Question 2.png"></li>
-                    <li class="vote3"><img src="image/Vote 3.png"></li>
-                </ul>
-
+                <div class="R_short_answer"><img src="image/ShortQuestion.png" width="1000"></div>
+                <form method="POST">
+                    <input class="response_box" type="text">
+                </form>
+                <form method="POST">
+                    <input type="button" value="send" onclick="javascript:window.alert('Success to response a Qbox!'); location.href='QboxHome.html';"style="color: #43618F; background: #93B0DB; border: 0px; border-radius: 10px; width: 50px; height: 30px; margin-top: 680px; margin-left: 935px;">
+                </form>
+                
                 <input type="checkbox" name="" id="sideMenu-active">
-                <div class="sideMenu">
+                <div class="sideMenu" style="margin-top: -61%;">
                     <div class = "list">
                         <label for="sideMenu-active">
                             <img src="image/List_button.png" style="width: 50px">

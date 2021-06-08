@@ -7,17 +7,14 @@
     
     <body>
         <nav class="topnav">
-            <div class = "list">
-                <a href="#" class="list"><img src="/image/List_button.png" width="50"></a> 
-            </div>
             <div class = "logo">
-                <a href="/QboxHome.html"><img src="/image/Home_button.png"></a>
+                <a href="QboxHome.html"><img src="image/Home_button.png"></a>
             </div>
         </nav>
         <div id="sitebody">
             <div class="content">
                 <div class="Qboximg">
-                    <img src="/image/QBox.png">
+                    <img src="image/QBox.png">
                 </div>
                 <div class="Qboxdata">
                     <img src="image/contant.png">
@@ -41,16 +38,33 @@
                     <input class="sex" type="text" placeholder=" Sex">
                 </form>
                 <form method="POST">
-                    <input class="mail" type="text" placeholder=" Email">
+                    <input class="mail" type="email" placeholder=" Email">
                 </form>
                 <form method="POST">   
                     <input class="pw" type="password" placeholder=" Password">
                 </form>
-                
-            </div>
             
-            
-            
+                <form method="POST">
+                    <input type="button" value="send" onclick="javascript:window.alert('Sign up success'); location.href='LogIn.html';"style="color: #585858; border-radius: 5px; width: 50px; height: 30px; margin-top: 300px; margin-left: 950px;">
+                </form>
+                <div class="have">
+                    <a href="LogIn.html"><img src="image/Have_account.png"></a>
+                </div>
+
+                <input type="checkbox" name="" id="sideMenu-active">
+                <div class="sideMenu" style="margin-top: -28.25%;">
+                    <div class = "list">
+                        <label for="sideMenu-active">
+                            <img src="image/List_button.png" style="width: 50px">
+                        </label>
+                    </div>
+                    <nav>
+                        <div><a href="#" class="_settings"><img src="image/menu_setting.png" style="width: 18%"> Settings</a></div>
+                        <div style="background: #FFF4DF; height: 2px; width: 25rem; margin-left: 1vw; margin-top: 25px;"></div>
+                        <div><a href="#" class="_mypage"><img src="image/menu_help.png" style="width: 16%"> Help</a></div>
+                    </nav>
+                </div>
+            </div>         
         </div>
     </body>
 </html>
