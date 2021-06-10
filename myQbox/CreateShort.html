@@ -7,9 +7,6 @@
     
     <body>
         <nav class="topnav">
-            <div class = "list">
-                <a href="#" class="list"><img src="image/List_button.png" width="50"></a>
-            </div>
             <div class = "logo">
                 <a href="Home.html"><img src="image/Home_button.png"></a>
             </div>
@@ -19,9 +16,50 @@
         </nav>
         <div id="sitebody">
             <form method="POST">
-                <input class="search" type="text" name="q" placeholder=" Search" style="border-color: #003B71;">
+                <input class="search" type="text" name="q" placeholder=" Search" style="border-color: #003B71;display: inline-block;">
             </form>
-            <div class="content"></div>
+            <div class="content">
+                <div class="sbox_out">
+                    <style>
+                        textarea::placeholder{
+                            color: #5C5C5C;
+                            font-size: 3rem;
+                        }
+                    </style>
+                    <form method="POST">
+                        <textarea class="sbox" placeholder="Share something..."></textarea>
+                    </form>
+                    <form method="POST">
+                        <input type="button" value="cancel" onclick="location.href='Home.html'" style="width: 5vw; padding-top: 0.5rem;padding-bottom: 0.5rem; margin-left: 55%;margin-top: 43%; background: #FFEBC4; border-radius: 5px;border: 2px solid #43618F; color: #5c5c5c;">
+                        <input type="button" value="send" onclick="javascript:window.alert('Success!'); location.href='Home.html';" style="width: 3vw; padding-top: 0.5rem;padding-bottom: 0.5rem;margin-top: 43%; background: #FFEBC4; border-radius: 5px;border: 2px solid #43618F; color: #5C5C5C;">
+                    </form>
+                </div>
+                <div style=" color: #5C5C5C;margin-top: 400px; margin-left: 650px">0/10000</div>
+                <input type="checkbox" name="" id="sideMenu-active">
+                <div class="sideMenu" style="margin-top: -423px;">
+                    <div class = "list">
+                        <label for="sideMenu-active">
+                            <img src="image/List_button.png" style="width: 50px">
+                        </label>
+                    </div>
+                    <nav>
+                        <div><a href="#" class="_settings"><img src="image/menu_setting.png" style="width: 18%"> Settings</a></div>
+                        <div style="background: #FFF4DF; height: 2px; width: 25rem; margin-left: 1vw; margin-top: 25px;"></div>
+                        <div><a href="Personal.html" class="_mypage"><img src="image/menu_mypage.png" style="width: 16%"> My Page</a></div>
+                        <div style="background: #FFF4DF; height: 2px; width: 25rem; margin-left: 1vw; margin-top: 70px;"></div>
+                        <div><a href="CreateVote.html" class="_vote"><img src="image/menu_vote.png" style="width: 13%"> Create Vote</a></div>
+                        <div style="background: #FFF4DF; height: 2px; width: 25rem; margin-left: 1vw; margin-top: 70px;"></div>
+                        <div><a href="CreateShort.html" class="_talk"><img src="image/menu_talk.png" style="width: 14%"> Create Talk</a></div>
+                        <div style="background: #FFF4DF; height: 2px; width: 25rem; margin-left: 1vw; margin-top: 70px;"></div>
+                        <div><a href="#" class="_history"><img src="image/menu_history.png" style="width: 19%"> History</a></div>
+                        <div style="background: #FFF4DF; height: 2px; width: 25rem; margin-left: 1vw; margin-top: 70px;"></div>
+                        <div><a href="#" class="_notifiction"><img src="image/menu_notifiction.png" style="width: 15%"> Notifiction</a></div>
+                        <div style="background: #FFF4DF; height: 2px; width: 25rem; margin-left: 1vw; margin-top: 70px;"></div>
+                        <div><a href="#" class="_help"><img src="image/menu_help.png" style="width: 20%"> Help</a></div>
+                    </nav>
+                    
+                </div>
+            </div>
         </div>
     </body>
 </html>

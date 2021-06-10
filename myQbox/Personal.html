@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en-tw">
+    <head>
+        <title>Qbox!</title>
+        <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    </head>
+    
+    <body>
+        <nav class="topnav">
+            <div class = "logo">
+                <a href="Home.html"><img src="image/Home_button.png"></a>
+            </div>
+            <div class = "login_out">
+                <a href="QboxHome.html"><img src="image/Logout.png"></a>
+            </div>
+        </nav>
+        
+        <div id="sitebody">
+            <div class="content">
+                <img src="image/p_information.png" style="width: 60vw; margin-top: 3%;">
+                <form method="POST">
+                    <input type="button" value="edit" onclick="javascript:location.href='EditPersonal.html';" style="width: 3vw; padding-top: 0.5rem;padding-bottom: 0.5rem;margin-top: 1.5%; background: #FFEBC4; border-radius: 5px;border: 2px solid #5C5C5C; color: #5C5C5C;">
+                </form>
+                <input type="checkbox" name="" id="sideMenu-active">
+                <div class="sideMenu" style="margin-top: -37.75vw;">
+                    <div class = "list">
+                        <label for="sideMenu-active">
+                            <img src="image/List_button.png" style="width: 50px">
+                        </label>
+                    </div>
+                    <nav>
+                        <div><a href="#" class="_settings"><img src="image/menu_setting.png" style="width: 18%"> Settings</a></div>
+                        <div style="background: #FFF4DF; height: 2px; width: 25rem; margin-left: 1vw; margin-top: 25px;"></div>
+                        <div><a href="Personal.html" class="_mypage"><img src="image/menu_mypage.png" style="width: 16%"> My Page</a></div>
+                        <div style="background: #FFF4DF; height: 2px; width: 25rem; margin-left: 1vw; margin-top: 70px;"></div>
+                        <div><a href="CreateVote.html" class="_vote"><img src="image/menu_vote.png" style="width: 13%"> Create Vote</a></div>
+                        <div style="background: #FFF4DF; height: 2px; width: 25rem; margin-left: 1vw; margin-top: 70px;"></div>
+                        <div><a href="CreateShort.html" class="_talk"><img src="image/menu_talk.png" style="width: 14%"> Create Talk</a></div>
+                        <div style="background: #FFF4DF; height: 2px; width: 25rem; margin-left: 1vw; margin-top: 70px;"></div>
+                        <div><a href="#" class="_history"><img src="image/menu_history.png" style="width: 19%"> History</a></div>
+                        <div style="background: #FFF4DF; height: 2px; width: 25rem; margin-left: 1vw; margin-top: 70px;"></div>
+                        <div><a href="#" class="_notifiction"><img src="image/menu_notifiction.png" style="width: 15%"> Notifiction</a></div>
+                        <div style="background: #FFF4DF; height: 2px; width: 25rem; margin-left: 1vw; margin-top: 70px;"></div>
+                        <div><a href="#" class="_help"><img src="image/menu_help.png" style="width: 20%"> Help</a></div>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
