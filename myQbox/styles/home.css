@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap%22");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+    font-size: 62.5%;
+}
+@media only screen and (min-width: 112.5em) {
+    html {
+    font-size: 75%; } 
+}
+@media only screen and (max-width: 37.5em) {
+    html {
+    font-size: 50%; } 
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    box-sizing: border-box;
+    background-color: #DBC392;
+}
+
+.topnav {
+    text-align: center;
+    height: 60px;
+    min-width: 100%;
+    position: fixed;
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background: #8F7A51;
+   
+}
+
+.topnav .logo{
+    margin-top: -15px;
+    display: inline-block;
+}
+
+.topnav .login_out{
+    position:absolute;
+    right: -10px;
+    top: -15px;
+    display: inline-block;
+}
+
+.sitebody{
+    position: relative;
+}
+
+.search{
+    position: absolute;
+    right: 105px;
+    top: 85px;
+    height: 40px; 
+    padding: 15px;
+    font: #8F7A51;
+    background: #DBC392;
+    border: 2px solid#003B71;
+    border-radius: 10px;
+}
+
+ul {
+    
+    list-style: none; 
+    text-align: center;
+}
+
+.content{
+    text-align: center;
+    position: absolute;
+    margin-left:50px;
+    margin-right:50px;
+    margin-top: 70px;
+    margin-bottom: 0;
+    width: 91vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height:100%;
+    background-color:#FFEBC4;
+    display: inline-block;
+}
+
+.vote1,
+.short1,
+.vote2,
+.short2,
+.vote3{
+    padding-top: 50px;  
+}
+
+/*側拉選單 */
+.sideMenu {
+    width: 300px;
+    height: 1000px;
+    top: -140px; 
+    left: -54px;
+    background: #DBC392;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    position: absolute;
+    box-shadow: 1px 0 10px #8F7A51;
+    border-radius: 0 0 5px 0;
+    transform: translateX(-100%);
+    transition:0.5s;
+    display: inline-block;
+}
+
+
+.sideMenu label{
+    width: 65px;
+    height: 65px;
+    background-color: #8F7A51;
+    position: relative; 
+    left: 190px;
+    top: -600px;   
+    line-height: 80px;
+    border-radius: 0 5px 5px 0;
+  
+}
+
+#sideMenu-switch:checked + .sideMenu{
+    transform: translateX(0);
+}
+
+#sideMenu-switch {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+
+/*側拉選單的細節 */
+nav a{ 
+    display: block;
+    padding: 20px;
+    color: #FFF4DF;
+    position: relative;
+    font-size: 30px;
+}
+
+/*底線 */
+nav a + a::before{
+    content: '';
+    position: absolute;
+    border-top: 1px solid #FFF4DF;
+    left: 10px;
+    right: 10px;
+    top: 0;
+}
